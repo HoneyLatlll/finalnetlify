@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/proxy/*"
+  to = "https://unipass.customs.go.kr:38010/:splat"
+  status = 200
+  force = true

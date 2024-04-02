@@ -16,6 +16,13 @@
                 background-color: rgb(66, 230, 241);
                 text-align:center;
             }
+            .imageParent{
+                display:flex;
+                justify-content:center;
+            }
+            .imageChild{
+                margin:200px;
+            }
             #topmenu {
                 height:50px;
                 color: #98E0AD;
@@ -94,11 +101,13 @@
                     김평 교수 : pkim@inje.ac.kr<br>
                 </p>
             </div>            
-            </div>       
+        </div>
+        <div class="imageParent">
+            <div class="imageChild">
                 <h3>
-                    <button type="button"><img src="./image/qna.jpg" height="200" width="200" display:flex; align-items:center;></button>
+                    <button type="button" onclick="location.href='./qna.html'"><img src="./image/qna.jpg" height="200" width="200"></button>
                     <img src="./image/map.png" height="300px" align="right">
-            </h3>
+                </h3>
             </div>
         </div>
     </body>

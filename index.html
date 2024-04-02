@@ -6,7 +6,6 @@
         <style>
             .detail{
                 display:flex;
-                width:1000;
                 justify-content:center;
                 padding:10px;
             }
@@ -17,21 +16,12 @@
                 background-color: rgb(66, 230, 241);
                 text-align:center;
             }
-             .imageParent{
-                display:flex;
-                justify-content:center;
-            }
-            .imageChild{
-                margin:10px;
-            }
             #topmenu {
-                padding:10px;
-                width: 1400px;
                 height:50px;
                 color: #98E0AD;
-                margin: 0 auto;
             }
             #topmenu ul{
+                width: 1000px;
                 margin: 0 auto;
                 overflow: hidden;
             }
@@ -44,7 +34,7 @@
                 color: black; 
                 background-color: #98E0AD;
                 float: left;
-                width: 330px;
+                width: 20%;
                 height: 100%;
                 line-height: 50px;
                 vertical-align: middle;
@@ -63,13 +53,14 @@
         <div>
             <h1 style="color:#17BDFF; text-align:center; font-family: sans-serif">InjSite</h1>
         </div>
-        <div id="topmenu" margin="10px">
+        <div id="topmenu">
             <nav>
                 <ul>
                     <li><a href="./index.html">메인페이지</a></li>
                     <li><a href="">프로그래밍 언어</a></li>
                     <li><a href="">학과</a></li>
                     <li><a href="./bus.html">버스</a></li>
+                    <li><a href="">QnA 게시판</a></li>
                 </ul>
             </nav>
         </div>
@@ -107,7 +98,7 @@
         <div class="imageParent">
             <div class="imageChild">
                 <h3>
-                    <button type="button"><img src="./image/qna.jpg" height="200" width="200"></button>
+                    <button type="button"><img src="./image/qna.jpg" height="200" width="200" align="center"></button>
                     <img src="./image/map.png" height="300px" align="right">
                 </h3>
             </div>

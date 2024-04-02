@@ -16,6 +16,13 @@
                 background-color: rgb(66, 230, 241);
                 text-align:center;
             }
+            .imageParent{
+                display:flex;
+                justify-content:center;
+            }
+            .imageChild{
+                margin:10px;
+            }
             #topmenu {
                 height:50px;
                 color: #98E0AD;
@@ -95,11 +102,13 @@
                 </p>
             </div>            
         </div>
-        <div>
-            <h3>
-                <button type="button"><img src="./image/qna.jpg" height="200" width="200"></button>
-                <img src="./image/map.png" height="300px" align="right">
-            </h3>
+        <div class="imageParent">
+            <div class="imageChild">
+                <h3>
+                    <button type="button"><img src="./image/qna.jpg" height="200" width="200"></button>
+                    <img src="./image/map.png" height="300px" align="right">
+                </h3>
+            </div>
         </div>
     </body>
 </html>

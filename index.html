@@ -3,6 +3,16 @@
     <head>
         <title>InjSite</title>
         <meta charset="utf-8">
+        <script>
+            function closePopup() {
+                var popup = document.querySelector('.popup');
+                var popupLayer = document.querySelector('.popup_layer');
+                var popupDimmed = document.querySelector('.popup_dimmed');
+                popup.style.display = 'none';
+                popupLayer.style.display = 'none';
+                popupDimmed.style.display = 'none';
+            }
+        </script>
         <style>
             .detail{
                 display:flex;
@@ -177,8 +187,7 @@
                     </p>
                 </div>
                 <div class="btn_area">
-                    <button onclick="functionToExecute()"></button>"
-                    <button type="button" name = "button" class="btn">예</button>
+                    <button onclick="closePopup()" class="btn">예</button>
                     <button type="button" name = "button" class="btn no">아니오</button>
                 </div>
             </div>

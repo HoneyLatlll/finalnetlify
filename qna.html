@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>InjSite</title>
+        <meta charset="utf-8">
+        <style>
+            .detail{
+                display:flex;
+                justify-content:center;
+                padding:10px;
+            }
+            .child {
+                width: 300px;
+                height: 230px;
+                margin: 10px;
+                background-color: rgb(66, 230, 241);
+                text-align:center;
+            }
+            .imageParent{
+                display:flex;
+                justify-content:center;
+            }
+            .imageChild{
+                margin:200px;
+            }
+            #topmenu {
+                padding:10px;
+                width: 1400px;
+                height:50px;
+                color: #98E0AD;
+                margin: 0 auto;
+            }
+            #topmenu ul{
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            #topmenu a{
+                text-decoration: none;
+                color: #404040;
+            }
+            #topmenu ul li{
+                list-style: none;
+                color: black; 
+                background-color: #98E0AD;
+                float: left;
+                width: 330px;
+                height: 100%;
+                line-height: 50px;
+                vertical-align: middle;
+                text-align: center;
+            }
+            #topmenu ul li a{
+                display: block;
+            }
+            #topmenu ul li a:hover {
+                background: #138535;
+                color: #fff;
+            }
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="css/board.css">
+    </head>
+    <body>
+        <div>
+            <h1 style="color:#17BDFF; text-align:center; font-family: sans-serif">InjSite</h1>
+        </div>
+        <div id="topmenu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">메인페이지</a></li>
+                    <li><a href="">프로그래밍 언어</a></li>
+                    <li><a href="">학과</a></li>
+                    <li><a href="./bus.html">버스</a></li>
+                </ul>
+            </nav>
+        </div>
+        <table class="table">
+            <tr><td colspan="2"><h2>QNA 게시판</h2></td></tr>
+            <tr class="header">
+                <td class="num">번호</td>
+                <td class="title">제목</td>
+                <td>작성자</td>
+                <td>작성날짜</td>
+            </tr>
+            <script>
+                var i, day = 20;
+                for (i = 10; i > 0; i--) {
+                    document.write("<tr class='body'>");
+                    document.write("<td>" + i +"</td>");
+                    document.write("<td class='title'><a href='./view.html'>제목입니다.</a></td>"); 
+                    document.write("<td>작성자</td>"); 
+                    document.write("<td>24-01-" + day-- + "</td>");
+                    document.write("</tr>");
+                }
+               </script>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td><button onclick="location.href='write.html'">글쓰기</button></td>
+            </tr>
+        </table>
+    </body>
+</html>

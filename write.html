@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>InjSite</title>
+        <meta charset="utf-8">
+        <style>
+            .detail{
+                display:flex;
+                justify-content:center;
+                padding:10px;
+            }
+            .child {
+                width: 300px;
+                height: 230px;
+                margin: 10px;
+                background-color: rgb(66, 230, 241);
+                text-align:center;
+            }
+            .imageParent{
+                display:flex;
+                justify-content:center;
+            }
+            .imageChild{
+                margin:200px;
+            }
+            #topmenu {
+                padding:10px;
+                width: 1400px;
+                height:50px;
+                color: #98E0AD;
+                margin: 0 auto;
+            }
+            #topmenu ul{
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            #topmenu a{
+                text-decoration: none;
+                color: #404040;
+            }
+            #topmenu ul li{
+                list-style: none;
+                color: black; 
+                background-color: #98E0AD;
+                float: left;
+                width: 330px;
+                height: 100%;
+                line-height: 50px;
+                vertical-align: middle;
+                text-align: center;
+            }
+            #topmenu ul li a{
+                display: block;
+            }
+            #topmenu ul li a:hover {
+                background: #138535;
+                color: #fff;
+            }
+        </style>     
+    </head>
+    <link rel="stylesheet" type="text/css" href="css/board.css">
+    <body>
+        <div>
+            <h1 style="color:#17BDFF; text-align:center; font-family: sans-serif">InjSite</h1>
+        </div>
+        <div id="topmenu">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">메인페이지</a></li>
+                    <li><a href="">프로그래밍 언어</a></li>
+                    <li><a href="">학과</a></li>
+                    <li><a href="./bus.html">버스</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form action="qna.html" method="post">
+            <table class="table2"> 
+                <tr><td><h2>글쓰기</h2></td></tr>
+                <tr><td class="header2">Title</td></tr>
+                <tr><td><input type="text" placeholder="제목을 입력하세요" name="title"></td></tr>
+                <tr><td class="header2">Comment</td></tr>
+                <tr><td><textarea placeholder="내용을 입력하세요" name="detail" class="textarea2"></textarea></td></tr>
+                <tr><td><input type="submit" value="등록" onclick="alert('작성 완료!')"></td></tr>
+            </table>
+            </form>
+    </body>
+</html>

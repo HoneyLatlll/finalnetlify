@@ -18,7 +18,8 @@
     margin:0;
 }
 .popup-container {
-            position: relative; /* 팝업 창과 자식 요소들의 z-index가 올바르게 적용되도록 함 */
+    position: relative; /* 팝업 창과 자식 요소들의 z-index가 올바르게 적용되도록 함 */
+    background: rgba(0, 0, 0, 0.5);
 }
         
 .popup {

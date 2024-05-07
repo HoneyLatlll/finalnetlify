@@ -67,6 +67,7 @@
     font-weight:bold;
     border:0;
     background:pink;
+    cursor: pointer;
 }
 
 .btn-no{
@@ -77,6 +78,7 @@
     font-weight:bold;
     border:0;
     background:lightblue;
+    cursor: pointer; 
 }
 
 .popup_dimmed{

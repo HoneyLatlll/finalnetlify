@@ -24,7 +24,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    z-index: 2;
+    z-index: 9999;
     border: 1px solid #ccc;
 }
 

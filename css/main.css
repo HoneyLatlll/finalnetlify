@@ -38,6 +38,7 @@
 }
 
 .btn_area {
+    position: absolute;
     text-align: center;
 }
 

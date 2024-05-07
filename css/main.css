@@ -17,54 +17,41 @@
 .imageChild{
     margin:0;
 }
-.popup{
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
 }
-.popup_layer{
-    position:absolute;
-    top:50%;
-    left:50%;
 
-    width:300px;
-    height:150px;
-    padding-bottom:50px;
-    margin:-100px 0 0 -150px;
-    background:#fff;
-    z-index:10;
+.popup_layer {
+    padding: 20px;
 }
-.text_area{
-    padding:50px 30px 30px;
-    text-align:center;
+
+.text_area {
+    margin-bottom: 20px;
 }
-.btn_area{
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:50px;
-    overflow:hidden;
+
+.btn_area {
+    text-align: center;
 }
-.btn{
-    float:left;
-    width:50%;
-    height:100%;
-    font-size:15px;
-    font-weight:bold;
-    border:0;
-    background:pink;
+
+.btn {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #17BDFF;
+    color: #fff;
+    cursor: pointer;
 }
-.btn-no{
-    float:right;
-    width:50%;
-    height:100%;
-    font-size:15px;
-    font-weight:bold;
-    border:0;
-    background:lightblue;
+
+.btn-no {
+    background-color: #ccc;
 }
 .popup_dimmed{
     position:absolute;

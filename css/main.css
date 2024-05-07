@@ -24,7 +24,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #b4b4b4;
-    z-index: 9998;
+    z-index: 99999;
 }
 
 .popup_layer {

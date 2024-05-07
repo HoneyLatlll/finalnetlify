@@ -4,9 +4,6 @@
     <title>InjSite</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <style>
-        /* CSS 코드 생략 */
-    </style>
     <script>
         var quizzes = [
             { question: "What is 2 + 2?", answer: "4" },
@@ -28,11 +25,14 @@
             var popup = document.querySelector('.popup');
             var textArea = document.querySelector('.text_area');
             var question = "<strong class='title'>Quiz!!!</strong><p>" + randomQuiz.question + "</p>";
+            var answerInput = "<input type='text' id='userAnswer' placeholder='Enter your answer'>";
             var btnArea = "<div class='btn_area'><button onclick='checkAnswer(\"" + randomQuiz.answer + "\")' class='btn'>Submit</button><button onclick='closePopup()' class='btn-no'>Close</button></div>";
 
-            textArea.innerHTML = question;
+            textArea.innerHTML = question + answerInput;
             textArea.innerHTML += btnArea;
             popup.style.display = 'block';
+
+            document.getElementById('userAnswer').focus();
         }
 
         function checkAnswer(correctAnswer) {
@@ -45,9 +45,7 @@
             } else {
                 alert("Incorrect! The correct answer is: " + correctAnswer);
             }
-        }
-
-        // 페이지가 로드될 때 팝업 창을 열도록 설정
+        }        
         window.onload = function() {
             showRandomQuiz();
         };

@@ -11,6 +11,13 @@
             { question: "답은 3", answer: "3" }
         ];
 
+        function showPopBlur(chk){
+            if(chk == false)
+                $('.content').css({"opacity" : "1","pointer-events":"auto"});
+            else
+                $('.content').css({"opacity" : "0.3","pointer-events":"none"});
+        }
+
         function closePopup() {
             var popup = document.querySelector('.popup');
             var popupLayer = document.querySelector('.popup_layer');
@@ -33,6 +40,7 @@
             textArea.innerHTML += btnArea;
 
              // 팝업이 열릴 때 배경을 어둡게 함
+            showPopBlur(true);
             popupDimmed.style.display = 'block';
             document.getElementById('userAnswer').focus();
         }
@@ -45,7 +53,7 @@
             } else {
                 alert("오답입니다 정답은: " + correctAnswer);
             }
-
+            showPopBlur(false);
             closePopup();
         }        
         window.onload = function() {

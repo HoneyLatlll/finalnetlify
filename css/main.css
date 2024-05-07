@@ -51,6 +51,7 @@
 }
 
 .btn_area{
+    display:flex;
     position:absolute;
     left:0;
     right:0;

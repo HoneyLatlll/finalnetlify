@@ -31,7 +31,9 @@
             
             textArea.innerHTML = question + answerInput;
             textArea.innerHTML += btnArea;
-            
+
+             // 팝업이 열릴 때 배경을 어둡게 함
+            popupDimmed.style.display = 'block';
             document.getElementById('userAnswer').focus();
         }
 

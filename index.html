@@ -35,17 +35,11 @@
             document.getElementById('userAnswer').focus();
         }
 
-        function checkAnswer(correctAnswer) {
-            var userAnswer = document.getElementById('userAnswer').value;
-            if (userAnswer === '') {
-                alert("Please enter your answer!");
-                return;
-            }
-
+        function checkAnswer(correctAnswer) {            
             if (userAnswer === correctAnswer) {
-                alert("Correct!");
+                alert("정답!");
             } else {
-                alert("Incorrect! The correct answer is: " + correctAnswer);
+                alert("오답입니다 정답은: " + correctAnswer);
             }
 
             closePopup();

@@ -36,15 +36,19 @@
         }
 
         function checkAnswer(correctAnswer) {
-            var userAnswer = prompt("Enter your answer:");
-            if (userAnswer === null) {
-                closePopup(); // 사용자가 취소 버튼을 누르면 팝업 창 닫기
-            } else if (userAnswer === correctAnswer) {
+            var userAnswer = document.getElementById('userAnswer').value;
+            if (userAnswer === '') {
+                alert("Please enter your answer!");
+                return;
+            }
+
+            if (userAnswer === correctAnswer) {
                 alert("Correct!");
-                closePopup(); // 정답인 경우 팝업 창 닫기
             } else {
                 alert("Incorrect! The correct answer is: " + correctAnswer);
             }
+
+            closePopup();
         }        
         window.onload = function() {
             showRandomQuiz();

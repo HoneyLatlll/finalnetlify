@@ -18,13 +18,15 @@
     margin:0;
 }
 
-.popup
-{
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
 }
 
 .popup_layer {
@@ -54,15 +56,14 @@
 .btn-no {
     background-color: #ccc;
 }
-.popup_dimmed
-{
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    background:#000;
-    opacity:0.3;
+.popup_dimmed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* 반투명한 검은색 배경 */
+    z-index: 9998;
 }
 
 #topmenu {

@@ -37,7 +37,6 @@
     display: flex;
     border: 2px solid #000; /* 테두리 스타일과 색상 지정 */
     border-radius: 10px; /* 테두리의 둥근 모서리를 위해 사용 */
-    background: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
 }

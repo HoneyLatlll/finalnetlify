@@ -49,17 +49,22 @@
 }
 
 .btn {
-    padding: 8px 16px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #17BDFF;
-    color: #fff;
-    cursor: pointer;
+    float:left;
+    width:50%;
+    height:100%;
+    font-size:15px;
+    font-weight:bold;
+    border:0;
 }
 
 .btn-no {
-    background-color: #ccc;
+    float:right;
+    width:50%;
+    height:100%;
+    font-size:15px;
+    font-weight:bold;
+    border:0;
+    background:lightblue;
 }
 .popup_dimmed {
     position: fixed;

@@ -12,7 +12,7 @@
 }
 .imageParent{
     display:flex;
-    justify-content:left;
+    justify-content:right;
 }
 .imageChild{
     margin:0;

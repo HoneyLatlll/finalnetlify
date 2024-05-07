@@ -35,7 +35,9 @@
             document.getElementById('userAnswer').focus();
         }
 
-        function checkAnswer(correctAnswer) {            
+        function checkAnswer(correctAnswer) {  
+            var userAnswer = document.getElementById('userAnswer').value;
+            
             if (userAnswer === correctAnswer) {
                 alert("정답!");
             } else {

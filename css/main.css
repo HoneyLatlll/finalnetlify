@@ -73,7 +73,6 @@
     background:lightblue;
 }
 .popup_dimmed {
-    display: none; /* 일단 숨김 */
     position: fixed;
     top: 0;
     left: 0;

@@ -133,11 +133,13 @@ body {
 }
 
 .pcontainer {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%; /* 너비를 80%로 설정 */
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 자동 여백으로 가운데 정렬 */
+    padding: 20px; /* 내부 패딩 추가 */
+    background-color: #fff; /* 배경색 설정 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    border-radius: 8px; /* 모서리 둥글게 설정 */
 }
 
 .ph1 {
@@ -182,9 +184,4 @@ body {
 .language:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.language p {
-    color: #000; /* 진한 검은색 */
-    font-weight: bold; /* 글자 두께 설정 */
 }

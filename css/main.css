@@ -137,12 +137,14 @@ h3 {
 }
 
 .qnaimg {
-     justify-content:right;
+    justify-content:right;
+    align-items:right;
 }
 
 .pimg {
     display: flex;
     justify-content: center;
+    align-items:center;
     flex-grow: 1;
 }
 

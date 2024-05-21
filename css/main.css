@@ -17,11 +17,6 @@ body {
     text-align: center;
 }
 
-.popup-container {
-    position: relative; /* 팝업 창과 자식 요소들의 z-index가 올바르게 적용되도록 함 */
-    background: rgba(0, 0, 0, 0.5);
-}
-
 .popup {
     position: fixed;
     top: 0;
@@ -130,23 +125,6 @@ body {
     color: #fff;
 }
 
-h3 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.qnaimg {
-    justify-content:right;
-    align-items:right;
-}
-
-.pimg {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    flex-grow: 1;
-}
 
 .pimg button {
     margin: 0 10px;

@@ -125,7 +125,7 @@ body {
     color: #fff;
 }
 
-.language-container {
+/*.language-container {
     width: 80%; /* 너비를 80%로 설정 */
     max-width: 1200px; /* 최대 너비 설정 */
     margin: 0 auto; /* 자동 여백으로 가운데 정렬 */
@@ -133,7 +133,7 @@ body {
     background-color: #fff; /* 배경색 설정 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
     border-radius: 8px; /* 모서리 둥글게 설정 */
-}
+}*/
 
 .language {
     margin: 20px 0;

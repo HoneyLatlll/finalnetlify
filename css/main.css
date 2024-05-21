@@ -1,7 +1,12 @@
-.detail{
-    display:flex;
-    justify-content:center;
-    padding:10px;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.detail {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
 }
 
 .child {
@@ -9,112 +14,104 @@
     height: 230px;
     margin: 10px;
     background-color: rgb(66, 230, 241);
-    text-align:center;
-}
-
-.imageParent{
-    display:flex;
-    justify-content:right;
-}
-
-.imageChild{
-    margin:0;
+    text-align: center;
 }
 
 .popup-container {
     position: relative; /* 팝업 창과 자식 요소들의 z-index가 올바르게 적용되도록 함 */
     background: rgba(0, 0, 0, 0.5);
 }
-        
-.popup{
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
+
+.popup {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.popup_layer{
-    position:absolute;
-    top:50%;
-    left:50%;
-    width:300px;
-    height:150px;
-    padding-bottom:50px;
-    margin:-100px 0 0 -150px;
-    background:#fff;
-    z-index:10;
-}
-.text_area{
-    padding:50px 30px 30px;
-    text-align:center;
+.popup_layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    padding-bottom: 50px;
+    margin: -100px 0 0 -150px;
+    background: #fff;
+    z-index: 10;
 }
 
-.btn_area{
-    display:flex;
-    position:absolute;
-    left:0;
-    right:0;
-    bottom:0;
-    height:50px;
-    overflow:hidden;
+.text_area {
+    padding: 50px 30px 30px;
+    text-align: center;
 }
 
-.btn{
-    float:left;
-    width:50%;
-    height:100%;
-    font-size:15px;
-    font-weight:bold;
-    border:0;
-    background:pink;
+.btn_area {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50px;
+    overflow: hidden;
+}
+
+.btn {
+    float: left;
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0;
+    background: pink;
     cursor: pointer;
-    z-index:10;
+    z-index: 10;
 }
 
-.btn-no{
-    float:right;
-    width:50%;
-    height:100%;
-    font-size:15px;
-    font-weight:bold;
-    border:0;
-    background:lightblue;
-    cursor: pointer; 
-    z-index:10;
+.btn-no {
+    float: right;
+    width: 50%;
+    height: 100%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 0;
+    background: lightblue;
+    cursor: pointer;
+    z-index: 10;
 }
 
-.popup_dimmed{
-    position:absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    background:#000;
-    opacity:0.3;
+.popup_dimmed {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.3;
 }
 
 #topmenu {
-    padding:10px;
+    padding: 10px;
     width: 1400px;
-    height:50px;
+    height: 50px;
     color: #98E0AD;
     margin: 0 auto;
 }
 
-#topmenu ul{
+#topmenu ul {
     margin: 0 auto;
     overflow: hidden;
 }
 
-#topmenu a{
+#topmenu a {
     text-decoration: none;
     color: #404040;
 }
 
-#topmenu ul li{
+#topmenu ul li {
     list-style: none;
-    color: black; 
+    color: black;
     background-color: #98E0AD;
     float: left;
     width: 330px;
@@ -124,11 +121,32 @@
     text-align: center;
 }
 
-#topmenu ul li a{
+#topmenu ul li a {
     display: block;
 }
 
 #topmenu ul li a:hover {
     background: #138535;
     color: #fff;
+}
+
+/* 새로 추가할 스타일 */
+h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qnaimg {
+    margin-left: auto;
+}
+
+.pimg {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.pimg button {
+    margin: 0 10px;
 }

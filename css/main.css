@@ -158,3 +158,28 @@ body {
 .language p {
     color: #555;
 }
+
+#c {
+    background-color: #1abc9c; /* 청록색 */
+}
+
+#cpp {
+    background-color: #3498db; /* 파란색 */
+}
+
+#java {
+    background-color: #e67e22; /* 주황색 */
+}
+
+#python {
+    background-color: #f1c40f; /* 노란색 */
+}
+
+#csharp {
+    background-color: #9b59b6; /* 보라색 */
+}
+
+.language:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

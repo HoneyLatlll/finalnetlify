@@ -130,7 +130,6 @@ body {
     color: #fff;
 }
 
-/* 새로 추가할 스타일 */
 h3 {
     display: flex;
     justify-content: space-between;
@@ -138,7 +137,7 @@ h3 {
 }
 
 .qnaimg {
-    margin-left: auto;
+    margin-right: auto;
 }
 
 .pimg {

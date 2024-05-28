@@ -4,53 +4,6 @@
     <title>InjSite</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script>
-        var quizzes = [
-            { question: "답은 1입니다", answer: "1" },
-            { question: "답은 2", answer: "2" },
-            { question: "답은 3", answer: "3" }
-        ];
-
-        function closePopup() {
-            var popup = document.querySelector('.popup');
-            var popupLayer = document.querySelector('.popup_layer');
-            var popupDimmed = document.querySelector('.popup_dimmed');
-            popup.style.display = 'none';
-            popupLayer.style.display = 'none';
-            popupDimmed.style.display = 'none';
-        }
-
-        function showRandomQuiz() {
-            var randomQuiz = quizzes[Math.floor(Math.random() * quizzes.length)];
-            var popup = document.querySelector('.popup');
-            var popupDimmed = document.querySelector('.popup_dimmed');
-            var textArea = document.querySelector('.text_area');
-            var question = "<strong class='title'>Quiz!!!</strong><p>" + randomQuiz.question + "</p>";
-            var answerInput = "<input type='text' id='userAnswer' placeholder='Enter your answer'>";
-            var btnArea = "<div class='btn_area'><button onclick='checkAnswer(\"" + randomQuiz.answer + "\")' class='btn'>Submit</button><button onclick='closePopup()' class='btn-no'>Close</button></div>";
-            
-            textArea.innerHTML = question + answerInput;
-            textArea.innerHTML += btnArea;
-
-             // 팝업이 열릴 때 배경을 어둡게            
-            popup.style.display = 'block';
-            document.getElementById('userAnswer').focus();
-        }
-
-        function checkAnswer(correctAnswer) {  
-            var userAnswer = document.getElementById('userAnswer').value;
-            
-            if (userAnswer === correctAnswer) {
-                alert("정답!");
-            } else {
-                alert("오답입니다 정답은: " + correctAnswer);
-            }       
-            closePopup();
-        }        
-        window.onload = function() {
-            showRandomQuiz();
-        };
-    </script>
 </head>
 <body>
     <div>
@@ -66,64 +19,32 @@
             </ul>
         </nav>
     </div>
-    <div class="detail">
-
-        <div class="child">
-            <h2 style="font-size:20px;">인제 컴퓨터 공학과<br> 공지사항 & 금주의 식단</h2>
-            <p>
-                <a href=https://cs.inje.ac.kr/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/>공지사항 바로가기<br></a>
-                <a href=https://www.inje.ac.kr/kor/Template/Bsub_page.asp?Ltype=5&Ltype2=3&Ltype3=3&Tname=S_Food&Ldir=board/S_Food&Lpage=s_food_view&d1n=5&d2n=4&d3n=4&d4n=0>
-                    금주의 식단 바로가기
-                </a>
-            </p>
+    <div class="language-container">
+        <h1>프로그래밍 언어</h1>
+        <div class="language" id="c">
+            <h2>C 언어</h2>
+            <p>C 언어는 범용 프로그래밍 언어로, 시스템 프로그래밍 및 임베디드 시스템에서 널리 사용됩니다. C는 효율성과 저수준 메모리 접근을 강조하는 언어입니다.</p>
+            <a href="c_details.html">자세히 보기</a>
         </div>
-        <div class="child">
-            <h2 style="font-size:20px">인제 컴퓨터 공학과<br> Tel&open kakaoTalk </h2>
-            <p>
-                055-320-3269<br>
-                <a href=https://open.kakao.com/o/gZbgx36e>@kakaotalk</a>
-            </p>
+        <div class="language" id="csharp">
+            <h2>C#</h2>
+            <p>C#는 Microsoft에서 개발한 객체 지향 프로그래밍 언어로, .NET 프레임워크에서 주로 사용됩니다. C#는 강력한 타입 시스템과 풍부한 라이브러리를 제공하여 윈도우 응용 프로그램, 웹 애플리케이션, 게임 개발 등에 사용됩니다.</p>
+            <a href="csharp_details.html">자세히 보기</a>
         </div>
-        <div class="child">
-            <h2 style="font-size:20px">학부 이메일&교수진 이메일 </h2>
-            <p>
-                학부 : cshouse@inje.ac.kr<br>
-                김태공 교수 : sun@inje.ac.kr<br>
-                박세명 교수 : cssmpark@inje.ac.kr<br>
-                서재현 교수 : jaiseu@inje.ac.kr<br>
-                김상균 교수 : skkim@inje.ac.kr<br>
-                김태완 교수 : twkim@inje.ac.kr<br>
-                김평 교수 : pkim@inje.ac.kr<br>
-            </p>
-        </div>            
-    </div>
-    <div>
-        <h3 style="text-align:center;">
-            <button type="button" onclick="location.href='./Planguage.html'"><img src="./image/c.jpg" height="150" width="150" ></button>
-            <button type="button" onclick="location.href='./Planguage.html'"><img src="./image/java.png" height="150" width="150" ></button>
-            <button type="button" onclick="location.href='./Planguage.html'"><img src="./image/python.png" height="150" width="150" ></button>  
-            <button type="button" onclick="location.href='./qna.html'"><img src="./image/qna.jpg" height="150" width="150" align="right"></button> 
-        </h3>
-    </div>
-    <div>
-        <h4>
-            <img src="./image/map.png" height="300px" align="right">
-        </h4>
-    </div>
-    <div class="popup-container">
-        <div class="popup">
-            <div class="popup_layer">
-                <div class="text_area">
-                    <!-- 퀴즈 내용이 여기에 동적으로 추가됨 -->
-                </div>
-                <!-- 버튼 영역 -->
-                <div class="btn_area">
-                    <!-- 버튼이 여기에 동적으로 추가됨 -->
-                </div>
-            </div>
-            <!-- 팝업 창 배경 -->
-            <div class="popup_dimmed"></div>
+        <div class="language" id="cpp">
+            <h2>C++</h2>
+            <p>C++는 C 언어를 기반으로 한 객체 지향 프로그래밍 언어로, 성능과 효율성을 강조하면서도 높은 수준의 추상화를 제공합니다. C++는 게임 개발, 시스템 소프트웨어, 드라이버 등 다양한 분야에서 사용됩니다.</p>
+            <a href="cpp_details.html">자세히 보기</a>
+        </div>
+        <div class="language" id="java">
+            <h2>Java</h2>
+            <p>Java는 객체 지향 프로그래밍 언어로, 다양한 플랫폼에서 실행할 수 있는 응용 프로그램을 개발하는 데 사용됩니다. Java는 강력한 라이브러리와 높은 보안성을 제공합니다.</p>
+            <a href="java_details.html">자세히 보기</a>
+        </div>
+        <div class="language" id="python">
+            <h2>Python</h2>
+            <p>Python은 인터프리터 방식의 고급 프로그래밍 언어로, 간결하고 읽기 쉬운 문법을 가지고 있습니다. Python은 데이터 분석, 웹 개발, 인공지능 등 다양한 분야에서 사용됩니다.</p>
+            <a href="python_details.html">자세히 보기</a>
         </div>
     </div>
 </body>
-</html>

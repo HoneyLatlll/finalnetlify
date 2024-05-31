@@ -20,7 +20,7 @@
 }
 
 .java-language p {
-    color: #000; /* 진한 검은색 */
+    color: #17BDFF; /* 진한 검은색 */
     font-weight: bold; /* 글자 두께 설정 */
 }
 
@@ -30,6 +30,6 @@
 }
 
 .java-highlight {
-    color: #000; /* 주황색 */
+    color: #e67e22; /* 주황색 */
     font-weight: bold; /* 글자 두께 설정 */
 }

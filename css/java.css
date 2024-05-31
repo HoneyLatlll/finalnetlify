@@ -16,11 +16,11 @@
 }
 
 .java-language h2 {
-    color: #fff; /* 글자 색 */
+    color: #000; /* 글자 색 */
 }
 
 .java-language p {
-    color: #17BDFF; /* 진한 검은색 */
+    color: #fff; /* 진한 검은색 */
     font-weight: bold; /* 글자 두께 설정 */
 }
 

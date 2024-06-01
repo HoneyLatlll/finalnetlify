@@ -1,138 +1,162 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .detail {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 10px;
 }
 
 .child {
-    width: 300px;
-    height: 230px;
+    flex: 1;
+    max-width: 300px;
     margin: 10px;
-    background-color: rgb(66, 230, 241);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
+.child h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #17BDFF;
+}
+
+.child p {
+    font-size: 16px;
+    color: #555;
+}
+
+a {
+    text-decoration: none;
+    color: #17BDFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #17BDFF;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #138535;
+}
+
+#topmenu {
+    background-color: #17BDFF;
+    padding: 10px 0;
+}
+
+#topmenu ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topmenu ul li {
+    margin: 0 10px;
+}
+
+#topmenu ul li a {
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+#topmenu ul li a:hover {
+    background-color: #138535;
+}
+
 .popup {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .popup_layer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 300px;
-    height: 150px;
-    padding-bottom: 50px;
-    margin: -100px 0 0 -150px;
     background: #fff;
-    z-index: 10;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .text_area {
-    padding: 50px 30px 30px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
 .btn_area {
     display: flex;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50px;
-    overflow: hidden;
+    justify-content: space-between;
 }
 
 .btn {
-    float: left;
-    width: 50%;
-    height: 100%;
-    font-size: 15px;
-    font-weight: bold;
-    border: 0;
-    background: pink;
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 16px;
     cursor: pointer;
-    z-index: 10;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #138535;
 }
 
 .btn-no {
-    float: right;
-    width: 50%;
-    height: 100%;
-    font-size: 15px;
-    font-weight: bold;
-    border: 0;
-    background: lightblue;
-    cursor: pointer;
-    z-index: 10;
+    background-color: lightblue;
 }
 
-.popup_dimmed {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: #000;
-    opacity: 0.3;
-}
-
-#topmenu {
-    padding: 10px;
-    width: 1400px;
-    height: 50px;
-    color: #98E0AD;
-    margin: 0 auto;
-}
-
-#topmenu ul {
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-#topmenu a {
-    text-decoration: none;
-    color: #404040;
-}
-
-#topmenu ul li {
-    list-style: none;
-    color: black;
-    background-color: #98E0AD;
-    float: left;
-    width: 330px;
-    height: 100%;
-    line-height: 50px;
-    vertical-align: middle;
-    text-align: center;
-}
-
-#topmenu ul li a {
-    display: block;
-}
-
-#topmenu ul li a:hover {
-    background: #138535;
-    color: #fff;
+.btn-no:hover {
+    background-color: #005f99;
 }
 
 .language-container {
-    width: 80%; /* 너비를 80%로 설정 */
-    max-width: 1200px; /* 최대 너비 설정 */
-    margin: 0 auto; /* 자동 여백으로 가운데 정렬 */
-    padding: 20px; /* 내부 패딩 추가 */
-    background-color: #fff; /* 배경색 설정 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
-    border-radius: 8px; /* 모서리 둥글게 설정 */
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .language {
@@ -146,27 +170,8 @@ body {
 }
 
 .language p {
-    color: #555;
-}
-
-#c {
-    background-color: #1abc9c; /* 청록색 */
-}
-
-#cpp {
-    background-color: #3498db; /* 파란색 */
-}
-
-#java {
-    background-color: #e67e22; /* 주황색 */
-}
-
-#python {
-    background-color: #f1c40f; /* 노란색 */
-}
-
-#csharp {
-    background-color: #9b59b6; /* 보라색 */
+    color: #000;
+    font-weight: bold;
 }
 
 .language:hover {
@@ -174,8 +179,22 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.language p {
-    color: #000; /* 진한 검은색 */
-    font-weight: bold; /* 글자 두께 설정 */
+#c {
+    background-color: #1abc9c;
 }
 
+#cpp {
+    background-color: #3498db;
+}
+
+#java {
+    background-color: #e67e22;
+}
+
+#python {
+    background-color: #f1c40f;
+}
+
+#csharp {
+    background-color: #9b59b6;
+}

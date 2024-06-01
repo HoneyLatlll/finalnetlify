@@ -78,13 +78,13 @@ button:hover {
 #topmenu ul {
     display: flex;
     justify-content: center;
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
 }
 
 #topmenu ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 #topmenu ul li a {

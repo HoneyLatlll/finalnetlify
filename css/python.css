@@ -20,6 +20,7 @@
 }
 
 .python-language p {
+    text-align:center;
     color: #000; /* 진한 검은색 */
     font-weight: bold; /* 글자 두께 설정 */
 }

@@ -33,3 +33,11 @@
     color: white; /* 주황색 */
     font-weight: bold; /* 글자 두께 설정 */
 }
+
+.pre{
+    text-align:center;
+}
+
+.code{
+    text-align:center;
+}

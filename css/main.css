@@ -124,7 +124,7 @@ button:hover {
 
 .button-container {
     display: flex;
-    justify-content: space-between;
+    text-align:right;
 }
 
 .btn_area {

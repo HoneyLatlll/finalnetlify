@@ -127,17 +127,6 @@ button:hover {
     justify-content: space-between;
 }
 
-.side-button {
-    flex: 1; /* 버튼이 가용 가능한 공간을 균등하게 차지하도록 설정합니다. */
-    max-width: 150px; /* 버튼의 최대 너비를 설정합니다. */
-}
-
-.side-button img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .btn_area {
     display: flex;
     justify-content: space-between;

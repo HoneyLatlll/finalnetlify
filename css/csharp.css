@@ -3,7 +3,7 @@
     max-width: 1200px; /* 최대 너비 설정 */
     margin: 0 auto; /* 자동 여백으로 가운데 정렬 */
     padding: 20px; /* 내부 패딩 추가 */
-    background-color: #67e1f7; /* 배경색 설정 */
+    background-color: #cca5ff /* 배경색 설정 */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
     border-radius: 8px; /* 모서리 둥글게 설정 */
 }

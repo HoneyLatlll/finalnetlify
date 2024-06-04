@@ -36,7 +36,7 @@
 
         function checkAnswer(correctAnswer) {  
             var userAnswer = document.getElementById('userAnswer').value;
-            if (userAnswer.replace(/\s+/g, '') === correctAnswer.replace(/\s+/g, '')) {
+            if (userAnswer === correctAnswer) {
                 alert("정답!");
             } else {
                 alert("오답입니다 정답은: " + correctAnswer);
@@ -46,7 +46,42 @@
         
         window.onload = function() {
             showRandomQuiz();
+            loadAcademicCalendar();
+            loadRecentNews();
         };
+
+        function loadAcademicCalendar() {
+            // 학사 일정 데이터를 불러와서 표시
+            var academicCalendar = [
+                { date: "2023-06-01", event: "개강" },
+                { date: "2023-08-15", event: "종강" },
+                { date: "2023-09-01", event: "신입생 오리엔테이션" },
+            ];
+            var calendarContainer = document.getElementById('academic-calendar');
+            academicCalendar.forEach(function(item) {
+                var calendarItem = document.createElement('p');
+                calendarItem.textContent = item.date + ": " + item.event;
+                calendarContainer.appendChild(calendarItem);
+            });
+        }
+
+        function loadRecentNews() {
+            // 최근 뉴스 데이터를 불러와서 표시
+            var recentNews = [
+                { title: "AI 연구 성과 발표", link: "#" },
+                { title: "컴퓨터 공학과 취업률 90% 달성", link: "#" },
+                { title: "학생 창업 경진대회 개최", link: "#" },
+            ];
+            var newsContainer = document.getElementById('recent-news');
+            recentNews.forEach(function(item) {
+                var newsItem = document.createElement('p');
+                var newsLink = document.createElement('a');
+                newsLink.textContent = item.title;
+                newsLink.href = item.link;
+                newsItem.appendChild(newsLink);
+                newsContainer.appendChild(newsItem);
+            });
+        }
     </script>
 </head>
 <body>
@@ -94,9 +129,15 @@
         </div>
     </div>
     <div>
-        <h3 class="text-align:center">
-            내용입력
-        </h3>
+        <h3 class="text-align:center">내용입력</h3>
+        <div id="academic-calendar" class="child">
+            <h2>학사 일정</h2>
+            <!-- 학사 일정 데이터가 여기 추가됨 -->
+        </div>
+        <div id="recent-news" class="child">
+            <h2>최근 뉴스</h2>
+            <!-- 최근 뉴스 데이터가 여기 추가됨 -->
+        </div>
     </div>
     <div class="button-container">
         <h3>

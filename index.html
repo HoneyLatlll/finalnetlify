@@ -32,7 +32,7 @@
 
         function checkAnswer(correctAnswer) {  
             var userAnswer = document.getElementById('userAnswer').value;
-            if (userAnswer === correctAnswer) {
+            if (userAnswer.replace(/\s+/g, '') === correctAnswer.replace(/\s+/g, '')) {
                 alert("정답!");
             } else {
                 alert("오답입니다 정답은: " + correctAnswer);

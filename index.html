@@ -35,10 +35,13 @@
         }
 
         function checkAnswer(correctAnswer) {  
-            var userAnswer = document.getElementById('userAnswer').value;
-            if (userAnswer.toLowerCase().trim() === correctAnswer.toLowerCase()) { 
+            var userAnswer = document.getElementById('userAnswer').value.toLowerCase().trim();
+            var correctAnswerWithoutSpaces = correctAnswer.replace(/\s/g, '').toLowerCase(); // 정답에서 띄어쓰기 제거
+
+            if (userAnswer === correctAnswerWithoutSpaces) { 
                 alert("정답!");
-            } else {
+            }  
+            else {
                 alert("오답입니다 정답은: " + correctAnswer);
             }
             closePopup();

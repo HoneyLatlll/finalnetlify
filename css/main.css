@@ -61,7 +61,7 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    background-color: #17BDFF;
+    background-color: white;
     color: #fff;
     transition: background-color 0.3s;
 }

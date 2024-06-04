@@ -36,13 +36,12 @@
 
         function checkAnswer(correctAnswer) {  
             var userAnswer = document.getElementById('userAnswer').value.toLowerCase().trim();
-            var correctAnswerWithoutSpaces = correctAnswer.replace(/\s/g, '').toLowerCase(); // 정답에서 띄어쓰기 제거
+            var correctAnswerWithoutSpaces = correctAnswer.toLowerCase().replace(/\s+/g, ''); // 정답에서 공백 제거
 
             if (userAnswer === correctAnswerWithoutSpaces) { 
                 alert("정답!");
-            }  
-            else {
-                alert("오답입니다 정답은: " + correctAnswer);
+            } else {
+                alert("오답입니다. 정답은: " + correctAnswer);
             }
             closePopup();
         }

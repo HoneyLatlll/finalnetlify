@@ -203,3 +203,24 @@ button:hover {
 #csharp {
     background-color: #9b59b6;
 }
+
+.academic-content {
+    background-color: #f1c40f; /* 학사일정 배경색 */
+}
+
+.news-content {
+    background-color: #3498db; /* 최근뉴스 배경색 */
+}
+
+.academic-content h2, .news-content h2 {
+    color: #fff; /* 제목 글자색 */
+}
+
+.academic-content p, .news-content p {
+    color: #333; /* 내용 글자색 */
+}
+
+.content-placeholder {
+    text-align: center;
+    margin-top: 20px;
+}

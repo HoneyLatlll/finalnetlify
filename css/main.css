@@ -124,7 +124,7 @@ button:hover {
 
 .button-container {
     display: flex;
-    text-align:right;
+    justify-content:right;
 }
 
 .btn_area {

@@ -21,7 +21,7 @@
             var popup = document.querySelector('.popup');
             var textArea = document.querySelector('.text_area');
             var question = "<strong class='title'>Quiz!!!</strong><p>" + randomQuiz.question + "</p>";
-            var answerInput = "<input type='text' id='userAnswer' placeholder='Enter your answer' style='height:20px'>";
+            var answerInput = "<input type='text' id='userAnswer' placeholder='Enter your answer' style='height:30px'>";
             var btnArea = "<div class='btn_area'><button onclick='checkAnswer(\"" + randomQuiz.answer + "\")' class='btn'>Submit</button><button onclick='closePopup()' class='btn-no'>Close</button></div>";
             
             textArea.innerHTML = question + answerInput + btnArea;

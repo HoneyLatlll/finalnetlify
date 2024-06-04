@@ -35,8 +35,8 @@
         }
 
         function checkAnswer(correctAnswer) {  
-            var userAnswer = document.getElementById('userAnswer').value;
-            if (userAnswer === correctAnswer) {
+            var userAnswer = document.getElementById('userAnswer').value.trim();
+            if (userAnswer.toLowerCase() === correctAnswer.toLowerCase()) { 
                 alert("정답!");
             } else {
                 alert("오답입니다 정답은: " + correctAnswer);

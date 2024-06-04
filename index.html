@@ -35,10 +35,11 @@
         }
 
         function checkAnswer(correctAnswer) {  
-            var userAnswer = document.getElementById('userAnswer').value.toLowerCase().trim();
-            var correctAnswerWithoutSpaces = correctAnswer.toLowerCase().replace(/\s+/g, ''); // 정답에서 공백 제거
+            var userAnswer = document.getElementById('userAnswer').value.toLowerCase();
+            var cleanedCorrectAnswer = correctAnswer.toLowerCase().replace(/\s+/g, ''); // 정답에서 공백 제거
 
-            if (userAnswer === correctAnswerWithoutSpaces) { 
+            // 사용자 답안에서 공백을 제거한 후, 정답과 비교
+            if (userAnswer.replace(/\s+/g, '') === cleanedCorrectAnswer) { 
                 alert("정답!");
             } else {
                 alert("오답입니다. 정답은: " + correctAnswer);

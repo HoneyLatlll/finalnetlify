@@ -58,7 +58,7 @@ a:hover {
 .logo-button {
     background-color: white;
     border: none;
-    padding: 0;
+    padding: 20px;
 }
 
 button {
@@ -161,7 +161,7 @@ button:hover {
 }
 
 .btn:hover {
-    background-color: #138535;
+    background-color: #b1e3f7;
 }
 
 .btn-no {

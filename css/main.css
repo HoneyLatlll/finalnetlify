@@ -61,6 +61,17 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    background-color: #17BDFF;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.imagebutton{
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
     background-color: white;
     color: #fff;
     transition: background-color 0.3s;

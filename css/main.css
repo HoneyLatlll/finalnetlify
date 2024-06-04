@@ -55,6 +55,12 @@ a:hover {
     text-decoration: underline;
 }
 
+.logo-button {
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
 button {
     border: none;
     padding: 10px 20px;

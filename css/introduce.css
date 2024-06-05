@@ -49,3 +49,25 @@
     text-decoration-line:underline;
     text-decoration-color:black;
 }
+
+.job-list, .employment-section {
+    margin: 10px 0;
+}
+
+.job-list ul, .employment-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.job-list li, .employment-section li {
+    margin: 5px 0;
+}
+
+.job-list li::before, .employment-section li::before {
+    content: "•";
+    color: #0044cc;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+

@@ -1,11 +1,12 @@
 .introduce-container {
-    width: 80%;
-    max-width: 1200px;
-    margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+}
+
+.introduce-heading {
+    text-align: center;
 }
 
 .introduce-language {
@@ -15,8 +16,9 @@
     border-left: 5px solid #0044cc;
 }
 
-.introduce-language .introduce-text {
+.introduce-text {
     color: #333;
+    line-height: 1.6;
 }
 
 .introduce-language .highlight {
@@ -52,8 +54,8 @@
 }
 
 .card-text {
-    line-height: 1.6;
     margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .card-list {

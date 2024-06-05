@@ -103,7 +103,15 @@
     }
 }
 
+/* .employment-details .job-box 규칙 수정 */
+.employment-details .job-box {
+    width: calc(50% - 20px); /* 각 상자 사이의 간격을 조정 */
+}
 
+/* .introduce-container .job-box 규칙 수정 */
+.introduce-container .job-box {
+    width: calc(50% - 20px); /* 각 상자 사이의 간격을 조정 */
+}
 
 
 

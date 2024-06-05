@@ -44,3 +44,8 @@
 .card p {
     margin: 0;
 }
+
+.textunderline{
+    text-decoration-line:underline;
+    text-decoration-color:black;
+}

@@ -73,3 +73,42 @@
     width: 1em;
     margin-left: -1em;
 }
+
+.job-description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.job-box {
+    width: calc(50% - 10px); /* 2개의 상자를 한 행에 배치하기 위해 50%의 너비로 설정 */
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.job-box h3 {
+    margin-top: 0;
+}
+
+.job-box p {
+    margin: 0;
+}
+
+/* 미디어 쿼리를 사용하여 화면이 작아질 때 job box의 너비를 조정 */
+@media screen and (max-width: 768px) {
+    .job-box {
+        width: 100%; /* 작은 화면에서는 100%의 너비로 설정하여 한 행에 하나씩 표시 */
+    }
+}
+이 CSS 코드는 각 직업을 나타내는 상자인 job box와 해당 직업의 설명을 담은 job description에 적용됩니다. 직업 상자는 흰색 배경과 회색 테두리를 가지며, 유연한 디자인을 위해 미디어 쿼리를 사용하여 작은 화면에서도 잘 표시됩니다.
+
+
+
+
+
+
+
+

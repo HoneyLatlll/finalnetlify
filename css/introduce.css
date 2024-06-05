@@ -82,6 +82,7 @@
 .job-box {
     width: calc(50% - 10px); /* 2개의 상자를 한 행에 배치하기 위해 50%의 너비로 설정 */
     margin-bottom: 20px;
+    margin:0 auto;
     padding: 10px;
     background-color: #f0f0f0;
     border: 1px solid #ddd;

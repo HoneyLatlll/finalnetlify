@@ -29,7 +29,7 @@
     padding: 20px;
     background-color: #ace9fd;
     border-left: 5px solid #c9f562;
-    text-align:center;
+    
 }
 
 .textunderline{
@@ -87,7 +87,7 @@
     background-color: #f0f0f0;
     border: 1px solid #ddd;
     border-radius: 5px;
-    text-align:center;
+    justify-content:center;
 }
 
 .job-box h3 {

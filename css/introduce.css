@@ -1,25 +1,37 @@
-.introduce-container {
-    width: 80%; /* 너비를 80%로 설정 */
-    max-width: 1200px; /* 최대 너비 설정 */
-    margin: 0 auto; /* 자동 여백으로 가운데 정렬 */
-    padding: 20px; /* 내부 패딩 추가 */
-    background-color: #67e1f7; /* 배경색 설정 */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
-    border-radius: 8px; /* 모서리 둥글게 설정 */
-}
-
 .introduce-language {
-    margin: 20px 0;
-    padding: 10px 20px;
-    border-bottom: 1px solid #ccc;
-    background-color: rgb(253, 253, 133); /* 주황색 */
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e8f4f8;
+    border-left: 5px solid #0044cc;
 }
 
-.introduce-language h2 {
-    color: #000; /* 글자 색 */
+.introduce-language h2,
+.introduce-language h3 {
+    color: #0044cc;
 }
 
 .introduce-language p {
-    color: #000; /* 진한 검은색 */
-    font-weight: bold; /* 글자 두께 설정 */
+    color: #333;
+}
+
+.introduce-language .highlight {
+    color: #0044cc;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin: 0;
 }

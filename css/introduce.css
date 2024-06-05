@@ -23,13 +23,18 @@
     font-weight: bold;
 }
 
-.card {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+.card1 {
+    margin-bottom: 20px;
     padding: 20px;
+    background-color: #e8f4f8;
+    border-left: 5px solid #c9f562;
+}
+
+.card2 {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #e8f4f8;
+    border-left: 5px solid #f2fa80;
 }
 
 .card h3 {

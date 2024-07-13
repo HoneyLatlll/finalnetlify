@@ -17,16 +17,23 @@ def fetch_naver_it_news():
     soup = BeautifulSoup(response.content, 'html.parser')
     news_items = []
     
-    # CSS 선택자를 사용하여 헤드라인 선택
-    headlines = soup.select('ul.type06_headline li dl dt:not(.photo) a')
+    # CSS 선택자를 사용하여 헤드라인과 이미지 선택
+    headlines = soup.select('ul.type06_headline li dl')
     
     if not headlines:
         print("No headlines found. Please check the CSS selector or the HTML structure.")
     
-    for headline in headlines[:5]:
-        title = headline.text.strip()
-        link = headline['href']
-        news_items.append({'title': title, 'link': link})
+    # 최대 5개의 헤드라인만 가져오기
+    for headline in headlines[:5]:  # 처음 5개만 선택
+        title_tag = headline.select_one('dt:not(.photo) a')
+        img_tag = headline.select_one('dt.photo img')
+        
+        if title_tag:
+            title = title_tag.text.strip()
+            link = title_tag['href']
+            image_url = img_tag['src'] if img_tag else None  # 이미지 URL
+            
+            news_items.append({'title': title, 'link': link, 'image': image_url})
     
     return news_items
 

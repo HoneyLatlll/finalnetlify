@@ -46,20 +46,30 @@
             }
             closePopup();
         }
-
-        function loadNews() {
-            fetch('news.json')
-                .then(response => response.json())
-                .then(newsData => {
-                    var newsContainer = document.getElementById('news');
-                    newsData.forEach(article => {
-                        var newsItem = document.createElement('div');
-                        newsItem.className = 'news-item';
-                        newsItem.innerHTML = `<a href="${article.url}">${article.title}</a>`;
-                        newsContainer.appendChild(newsItem);
-                    });
-                })
-                .catch(error => console.error('Error loading news:', error));
+        async function loadNews() {
+            const response = await fetch('news.json'); // JSON 파일 경로
+            const newsItems = await response.json();
+            const newsContainer = document.getElementById('news-container');
+            
+            newsItems.forEach(item => {
+                const newsItem = document.createElement('div');
+                newsItem.className = 'news-item';
+                
+                const title = document.createElement('h3');
+                const link = document.createElement('a');
+                link.href = item.link;
+                link.textContent = item.title;
+                title.appendChild(link);
+                
+                const img = document.createElement('img');
+                img.src = item.image_url;
+                img.alt = item.title;
+                
+                newsItem.appendChild(img);
+                newsItem.appendChild(title);
+                
+                newsContainer.appendChild(newsItem);
+            });
         }
         
         window.onload = function() {
@@ -121,8 +131,8 @@
             <button type="button" class="logo-button" onclick="location.href='./python_details.html'"><img src="./image/pythonlogo.png" height="150" width="150"></button>
         </h3>
     </div>
-    <div id="news" class="detail">
-        <h2>Latest IT News</h2>
+    <div id="news-container">
+        <h2> IT News</h2>
         <!-- 뉴스 내용이 여기에 동적으로 추가됨 -->
     </div>
     <div class="detail">

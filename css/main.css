@@ -221,3 +221,18 @@ button:hover {
 #csharp {
     background-color: #9b59b6;
 }
+
+#news-container {
+    text-align: left; /* 왼쪽 정렬 */
+    margin: 20px; /* 여백 추가 */
+}
+.news-item {
+    display: flex; /* 이미지와 제목을 가로로 배치 */
+    align-items: center; /* 세로 중앙 정렬 */
+    margin-bottom: 10px; /* 뉴스 항목 간격 */
+}
+.news-item img {
+    margin-right: 10px; /* 이미지와 제목 간격 */
+    width: 100px; /* 이미지 크기 조정 */
+    height: auto; /* 비율 유지 */
+}

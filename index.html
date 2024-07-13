@@ -47,28 +47,38 @@
             closePopup();
         }
         async function loadNews() {
-            const response = await fetch('news.json'); // JSON 파일 경로
-            if (!response.ok) {
-                console.error("Failed to load news.json");
-                return;
-            }
-            const newsItems = await response.json();
-            const newsContainer = document.getElementById('news-container');
-            
-            newsItems.forEach(item => {
-                const newsItem = document.createElement('div');
-                newsItem.className = 'news-item';
-                
-                const title = document.createElement('h3');
-                const link = document.createElement('a');
-                link.href = item.link;
-                link.textContent = item.title;
-                title.appendChild(link);
-                
-                newsItem.appendChild(title);
-                newsContainer.appendChild(newsItem);
-            });
+        const response = await fetch('news.json'); // JSON 파일 경로
+        if (!response.ok) {
+            console.error("Failed to load news.json");
+            return;
         }
+        const newsItems = await response.json();
+        const newsContainer = document.getElementById('news-container');
+        
+        newsItems.forEach(item => {
+            const newsItem = document.createElement('div');
+            newsItem.className = 'news-item';
+            
+            const title = document.createElement('h3');
+            const link = document.createElement('a');
+            link.href = item.link;
+            link.textContent = item.title;
+            title.appendChild(link);
+            
+            // 이미지 추가
+            if (item.image) {
+                const img = document.createElement('img');
+                img.src = item.image;
+                img.alt = item.title; // 대체 텍스트
+                img.style.width = '100px'; // 이미지 크기 조정 (필요에 따라 조정 가능)
+                img.style.height = 'auto'; // 비율 유지
+                newsItem.appendChild(img);
+            }
+            
+            newsItem.appendChild(title);
+            newsContainer.appendChild(newsItem);
+        });
+    }
         
         window.onload = function() {
             showRandomQuiz();

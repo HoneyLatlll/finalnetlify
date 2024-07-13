@@ -48,6 +48,10 @@
         }
         async function loadNews() {
             const response = await fetch('news.json'); // JSON 파일 경로
+            if (!response.ok) {
+                console.error("Failed to load news.json");
+                return;
+            }
             const newsItems = await response.json();
             const newsContainer = document.getElementById('news-container');
             
@@ -61,13 +65,7 @@
                 link.textContent = item.title;
                 title.appendChild(link);
                 
-                const img = document.createElement('img');
-                img.src = item.image_url;
-                img.alt = item.title;
-                
-                newsItem.appendChild(img);
                 newsItem.appendChild(title);
-                
                 newsContainer.appendChild(newsItem);
             });
         }

@@ -213,7 +213,7 @@ button:hover {
 #news-container {
     text-align: left; /* 왼쪽 정렬 */
     flex: 1;
-    max-width: 700px;
+    max-width: 650px;
     margin: 10px;
     padding: 20px;
     background-color: #fff;

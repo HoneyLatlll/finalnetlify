@@ -11,7 +11,7 @@ body {
     padding: 20px;
 }
 
-h1, h2, h3 {
+h1, h2{
     color: #000;
     text-align: center;
     margin-bottom: 20px;
@@ -58,7 +58,7 @@ a:hover {
 .logo-button {
     background-color: white;
     border: none;
-    padding: 20px;
+    padding: 0;
 }
 
 button {
@@ -133,18 +133,6 @@ button:hover {
     justify-content: center;
 }
 
-.side-button {
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-.side-button img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
 .btn_area {
     display: flex;
     justify-content: space-between;
@@ -161,7 +149,7 @@ button:hover {
 }
 
 .btn:hover {
-    background-color: #b1e3f7;
+    background-color: #138535;
 }
 
 .btn-no {
@@ -224,7 +212,13 @@ button:hover {
 
 #news-container {
     text-align: left; /* 왼쪽 정렬 */
-    margin: 20px; /* 여백 추가 */
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .news-item {
     display: flex; /* 이미지와 제목을 가로로 배치 */

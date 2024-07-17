@@ -67,11 +67,13 @@
             
             // 이미지 추가
             if (item.image) {
-                    const img = document.createElement('img');
-                    img.src = item.image;
-                    img.alt = item.title; // 대체 텍스트
-                    newsItem.appendChild(img);
-                }
+                const img = document.createElement('img');
+                img.src = item.image;
+                img.alt = item.title; // 대체 텍스트
+                img.style.width = '100px'; // 이미지 크기 조정 (필요에 따라 조정 가능)
+                img.style.height = 'auto'; // 비율 유지
+                newsItem.appendChild(img);
+            }
             
             newsItem.appendChild(title);
             newsContainer.appendChild(newsItem);
@@ -129,16 +131,16 @@
         </div>
     </div>
     <div class="button-container">
-        <h3>
+        <h2>
             <button type="button" class="logo-button" onclick="location.href='./c_details.html'"><img src="./image/clogo.png" height="150" width="150"></button>
             <button type="button" class="logo-button" onclick="location.href='./cpp_details.html'"><img src="./image/cpplogo.png" height="150" width="150"></button>
             <button type="button" class="logo-button" onclick="location.href='./csharp_details.html'"><img src="./image/csharplogo.png" height="150" width="150"></button>
             <button type="button" class="logo-button" onclick="location.href='./java_details.html'"><img src="./image/javalogo.png" height="150" width="150"></button>
             <button type="button" class="logo-button" onclick="location.href='./python_details.html'"><img src="./image/pythonlogo.png" height="150" width="150"></button>
-        </h3>
+        </h2>
     </div>
     <div id="news-container">
-        <p class="text-align:left",style="font-size:6px;font-weight:30"> IT News </p>
+        <h3> IT News </h3>
         <!-- 뉴스 내용이 여기에 동적으로 추가됨 -->
     </div>
     <div class="detail">

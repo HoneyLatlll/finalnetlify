@@ -240,6 +240,7 @@ button:hover {
     width: 100%;
     border-top: 1px solid #dee2e6;
     margin-top: 20px; /* 상단 콘텐츠와의 간격 조절 */
+    height: 50px; /* 배너 컨테이너 높이 설정 */
 }
 
 .banner-item {
@@ -256,6 +257,6 @@ button:hover {
 }
 
 .banner-img {
-    height: 20px; /* 원하는 이미지 높이로 조정 */
+    height: 30px; /* 원하는 이미지 높이로 조정 */
     margin-right: 8px;
 }

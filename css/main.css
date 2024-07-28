@@ -230,3 +230,26 @@ button:hover {
     width: 100px; /* 이미지 크기 조정 */
     height: auto; /* 비율 유지 */
 }
+
+.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #dee2e6;
+}
+
+.banner-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.banner-item:hover {
+    text-decoration: underline;
+}

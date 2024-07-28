@@ -236,18 +236,31 @@ button:hover {
     justify-content: space-around; /* 각 아이템이 동일한 간격을 갖도록 설정 */
     align-items: center;
     background-color: #f8f9fa;
-    padding: 10px 0;
+    padding: 20px 0;
     width: 100%;
     border-top: 1px solid #dee2e6;
-    margin-top: 20px; /* 상단 콘텐츠와의 간격 조절 */
+    margin-top: 20px; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .banner-item {
-    flex: 1; /* 각 배너 아이템이 동일한 너비를 갖도록 설정 */
+    flex: 1; /
     display: flex;
-    justify-content: center; /* 이미지가 배너 아이템의 중앙에 위치하도록 설정 */
+    justify-content: center; 
     align-items: center;
     text-decoration: none;
+    padding: 10px;
+    margin: 0 15px; 
+    background-color: white; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* 호버 효과를 위한 트랜지션 추가 */
+}
+
+.banner-item:hover {
+    transform: translateY(-5px); /* 호버 시 살짝 위로 이동 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 호버 시 그림자 강화 */
 }
 
 .banner-item a {
@@ -257,6 +270,6 @@ button:hover {
 }
 
 .banner-img {
-    max-width: 80%; /* 이미지 크기를 줄이기 */
+    max-width: 80%; /* 이미지 크기조절 */
     height: auto; /* 비율 유지 */
 }

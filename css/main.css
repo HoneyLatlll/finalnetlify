@@ -241,10 +241,11 @@ button:hover {
     border-top: 1px solid #dee2e6;
     margin-top: 20px; 
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    height: 150px; /* 배너 컨테이너 높이 설정 */
 }
 
 .banner-item {
-    flex: 1; /
+    flex: 1; /* 각 배너 아이템이 동일한 너비를 갖도록 설정 */
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -252,10 +253,11 @@ button:hover {
     padding: 10px;
     margin: 0 15px; 
     background-color: white; 
-    border: 1px solid #ddd; 
-    border-radius: 8px; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* 호버 효과를 위한 트랜지션 추가 */
+    height: 100%; 
 }
 
 .banner-item:hover {
@@ -267,9 +269,10 @@ button:hover {
     display: flex; /* 링크가 이미지 크기에 맞도록 설정 */
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .banner-img {
-    max-width: 80%; /* 이미지 크기조절 */
-    height: auto; /* 비율 유지 */
+    max-height: 80%; /* 이미지 높이를 배너 컨테이너 높이에 맞추기 */
+    width: auto; /* 비율 유지 */
 }

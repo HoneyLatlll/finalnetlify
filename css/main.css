@@ -248,11 +248,15 @@ button:hover {
     justify-content: center; /* 이미지가 배너 아이템의 중앙에 위치하도록 설정 */
     align-items: center;
     text-decoration: none;
-    padding: 0 15px; /* 이미지와 배너 아이템 간격 조절 */
-    box-sizing: border-box; /* 패딩을 포함한 전체 너비 조절 */
+}
+
+.banner-item a {
+    display: flex; /* 링크가 이미지 크기에 맞도록 설정 */
+    justify-content: center;
+    align-items: center;
 }
 
 .banner-img {
-    width: 100%; /* 이미지가 배너 아이템을 꽉 채우도록 설정 */
+    max-width: 80%; /* 이미지 크기를 줄이기 */
     height: auto; /* 비율 유지 */
 }

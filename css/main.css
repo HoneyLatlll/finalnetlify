@@ -241,7 +241,7 @@ button:hover {
     border-top: 1px solid #dee2e6;
     margin-top: 20px; 
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    height: 150px; /* 배너 컨테이너 높이 설정 */
+    height: 80px; /* 배너 컨테이너 높이 설정 */
 }
 
 .banner-item {

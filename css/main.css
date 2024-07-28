@@ -237,10 +237,9 @@ button:hover {
     align-items: center;
     background-color: #f8f9fa;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     border-top: 1px solid #dee2e6;
+    margin-top: 20px; /* 상단 콘텐츠와의 간격 조절 */
 }
 
 .banner-item {
@@ -248,8 +247,42 @@ button:hover {
     text-decoration: none;
     color: #007bff;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 
 .banner-item:hover {
     text-decoration: underline;
+}
+
+.banner-img {
+    height: 20px; /* 원하는 이미지 높이로 조정 */
+    margin-right: 8px;
+}.banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    width: 100%;
+    border-top: 1px solid #dee2e6;
+    margin-top: 20px; /* 상단 콘텐츠와의 간격 조절 */
+}
+
+.banner-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.banner-item:hover {
+    text-decoration: underline;
+}
+
+.banner-img {
+    height: 20px; /* 원하는 이미지 높이로 조정 */
+    margin-right: 8px;
 }
